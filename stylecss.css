@@ -1,0 +1,112 @@
+body {
+  background: rgb(243, 229, 229);
+  margin: 50px;
+}
+
+.origen {
+  text-align: justify;
+  color: rgb(38, 41, 73);
+  max-width: 500px;
+}
+
+a {
+  position: relative;
+  margin-left: 300px;
+  color: lightpink;
+}
+
+a:hover,
+a:visited {
+  color: rgb(102, 43, 97);
+}
+
+a:link {
+  color: rgb(38, 41, 73);
+  text-decoration: none;
+}
+
+h1,
+h2 {
+  color: rgb(102, 43, 97);
+}
+
+#pelis {
+  position: absolute;
+  top: 340px;
+  right: 50px;
+  color: rgb(38, 41, 73);
+  border: 3px double rgb(102, 43, 97);
+  text-align: left;
+}
+
+caption {
+  color: rgb(102, 43, 97);
+}
+
+th {
+  background-color: rgb(102, 43, 97);
+  color: lightpink;
+}
+
+th,
+td {
+  border: 1px dotted rgb(102, 43, 97);
+
+}
+
+tr:hover {
+  background-color: rgb(171, 141, 202);
+}
+iframe{
+  width:116px; 
+  height:65px;
+  border: 0;
+}  
+
+img {
+  width: 183px;
+  height: 275px;
+}
+
+#uno {
+  position: absolute;
+  top: 45px;
+  right: 50px;
+}
+
+#dos {
+  position: absolute;
+  top: 45px;
+  right: 235px;
+}
+
+#tres {
+  position: absolute;
+  top: 45px;
+  right: 420px;
+}
+
+.novias {
+  list-style-type: none;
+}
+
+li {
+  display: inline-block;
+}
+
+.novias a {
+  background-color: lightpink;
+  border: 1px dotted lightskyblue;
+  margin: 0;
+  padding: 8px;
+
+}
+
+a:hover {
+  opacity: 0.5;
+}
+
+.barbotton a, .barbotton{
+  background-color: rgb(102, 43, 97);
+  color: lightpink
+  }
