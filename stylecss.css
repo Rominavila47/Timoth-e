@@ -1,42 +1,55 @@
 body {
+  font-family: Garamond, serif;
   background: rgb(243, 229, 229);
-  margin: 50px;
+}
+
+main {
+  margin: 0% 10%;
+}
+
+.barra ul {
+  list-style-type: none;
+  background-color: rgb(255, 182, 193);
+  margin: 0%;
+  padding: 0%;
 }
 
 .origen {
   text-align: justify;
   color: rgb(38, 41, 73);
-  max-width: 500px;
+  max-width: 40%;
+  float: left;
 }
 
-a {
-  position: relative;
-  margin-left: 300px;
-  color: lightpink;
-}
-
-a:hover,
-a:visited {
-  color: rgb(102, 43, 97);
-}
-
-a:link {
-  color: rgb(38, 41, 73);
-  text-decoration: none;
+p {
+  margin: 0%;
+  text-indent: 50px;
 }
 
 h1,
 h2 {
   color: rgb(102, 43, 97);
+  text-shadow: 3px 3px 3px #ababab;
+  font-size: bold;
+}
+
+h1::first-letter,
+h2::first-letter {
+  font-family: "sofia", sans-serif;
 }
 
 #pelis {
-  position: absolute;
-  top: 340px;
-  right: 50px;
   color: rgb(38, 41, 73);
   border: 3px double rgb(102, 43, 97);
   text-align: left;
+  overflow-x: auto;
+  clear: left;
+}
+
+#galeria {
+  float: right;
+  max-width: 70%;
+  height: auto;
 }
 
 caption {
@@ -55,58 +68,99 @@ td {
 }
 
 tr:hover {
-  background-color: rgb(171, 141, 202);
+  background-color: rgb(250, 191, 200, 0.2);
 }
-iframe{
-  width:116px; 
-  height:65px;
+
+iframe {
+  width: 116px;
+  height: 65px;
   border: 0;
-}  
-
-img {
-  width: 183px;
-  height: 275px;
 }
 
-#uno {
-  position: absolute;
-  top: 45px;
-  right: 50px;
-}
-
-#dos {
-  position: absolute;
-  top: 45px;
-  right: 235px;
-}
-
-#tres {
-  position: absolute;
-  top: 45px;
-  right: 420px;
-}
-
-.novias {
-  list-style-type: none;
-}
-
-li {
-  display: inline-block;
-}
-
-.novias a {
+.varbarra ul {
   background-color: lightpink;
-  border: 1px dotted lightskyblue;
-  margin: 0;
-  padding: 8px;
-
+  flex-flow: row wrap;
+  justify-content: flex-end;
 }
 
-a:hover {
-  opacity: 0.5;
+.barra a, .novias a {
+  color: rgb(59, 15, 110);
+  text-align: center;
+  text-decoration: none;
 }
 
-.barbotton a, .barbotton{
+.barra li,
+.novias li {
+  list-style-type: none;
+  display: inline-block;
+  background-color: lightpink;
+  padding: 4px 10px;
+}
+
+.barra li:hover,
+.novias li:hover,
+.novias li:visited {
+  color: rgb(102, 43, 97);
+  background-color: rgb(255, 182, 193, 0.3);
+  box-shadow: 5px 5px 10px 0px rgb(87, 5, 5);
+}
+
+.active {
+  background-color: rgb(192, 72, 90);
+}
+
+.novias li:link {
+  color: rgb(38, 41, 73);
+  text-decoration: none;
+}
+
+.barbotton a,
+.barbotton {
+  display: inline-block;
+  justify-content: space-around;
   background-color: rgb(102, 43, 97);
   color: lightpink
-  }
+}
+
+/*estilo para quiz*/
+form {
+  display: flex;
+  width: 100%;
+  flex-flow: wrap row;
+  align-content: center;
+
+}
+
+fieldset {
+  width: 100%;
+  background-color: rgb(250, 191, 200);
+  box-sizing: border-box;
+  padding: 8px;
+  margin: 20px;
+  box-shadow: 5px 5px 10px 0px rgb(87, 5, 5);
+
+}
+
+legend {
+  text-align: left;
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#result {
+  max-width: 40%;
+  margin: 1% 75%;
+  /*cambiar a flex*/
+  padding: 15px;
+  box-sizing: border-box;
+  border: 5px solid rgb(250, 191, 200);
+  border-radius: 30%;
+  background-color: rgb(102, 43, 97);
+  color: rgb(250, 191, 200);
+  font: 20px Arial, sans-serif;
+
+}
+
+#result:hover {
+  box-shadow: 0px 5px 20px 0px rgb(87, 5, 5);
+}

@@ -4,69 +4,134 @@
 
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Timy Quiz</title>
-    <link rel="stylesheet" href="stylecss.css" type="text/css" />
+    <link rel="stylesheet" href="stylecss.css" type="text/css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 
 <body>
-    <pre><blockquote></blockquote></pre>
+    <h1>Are you a Real Fan?</h1>
+
+    <blockquote>
+        <pre></pre>
+    </blockquote>
     <div>
-        <form action="">
-            <label for="Name">Name</label>
-            <input type="text" id="Name" name="Name" placeholder="Romina" required>
-            <label for="Country">Country</label>
-            <input type="text" id="Country" name="Country" placeholder="Aruba">
-        </form>
-        <form action="">
-            <label for="favcolor">Select his favorite color:</label>
-            <input type="color" id="favcolor" name="favcolor" value="#7c44cf">
-        </form>
-        <form action="">
-            <label for="birthday">Birthday:</label>
-            <input type="date" id="birthday" name="birthday">
-        </form>
-        <form action="">
-            <label for=""></label>
-            <input type="radio" id="" name="" value="">
-            <label for=""></label>
-            <input type="radio" id="" name="" value="">
-            <label for=""></label>
-            <input type="radio" id="" name="" value="">
-            <label for=""></label>
-            <input type="radio" id="" name="" value="">
-        </form>
-        <form action="">
-            <label for=""></label>
-            <input type="checkbox" id="" name="" value="">
-            <label for=""></label>
-            <input type="checkbox" id="" name="" value="">
-            <label for=""></label>
-            <input type="checkbox" id="" name="" value="">
-            <label for=""></label>
-            <input type="checkbox" id="" name="" value="">
-        </form>
-        <form action="">
-            <label for=""></label>
-            <select id="" name="">
-                <option value="Options">Options</option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-                <option value=""></option>
-            </select>
-        </form>
-        <form action="">
-
-        </form>
-        <form action="">
-
-        </form>
-        <form action="">
-
-        </form>
-        <form action="">
-           <button type="button" aria-label="Enviar"onclick="alert('No disponible')">Enviar</button>
+        <form>
+            <fieldset>
+                <legend>NAME</legend>
+                <h3>What is his full name?</h3>
+                <input type="radio" id="ttc" name="name" value="Timothée Tim Chalamet">
+                <label for="ttc">Timothée Tim Chalamet</label>
+                <input type="radio" id="tcj" name="name" value="Timothée Chalamet Jr.">
+                <label for="tcj">Timothée Chalamet Jr.</label>
+                <input type="radio" id="thc" name="name" value="Timothée Hal Chalamet">
+                <label for="thc">Timothée Hal Chalamet</label>
+                <input type="radio" id="tc" name="name" value="Timothée Chocolat">
+                <label for="tc">Timothée Chocolat</label>
+            </fieldset>
+            <fieldset>
+                <legend>BORN</legend>
+                <h3>When is his birthday?</h3>
+                <input type="radio" id="95" name="born" value="December 27, 1995">
+                <label for="95">December 27, 1995</label>
+                <input type="radio" id="995" name="born" value="January 27, 1995">
+                <label for="995">January 27, 1995</label>
+                <input type="radio" id="87" name="born" value="August 17, 1897">
+                <label for="87">August 17, 1897</label>
+                <input type="radio" id="99" name="born" value="September 22, 1999">
+                <label for="99">September 22, 1999</label>
+            </fieldset>
+            <fieldset>
+                <legend>COLOR</legend>
+                <h3>Which is his favorite color?</h3>
+                <label for="favcolor">Select his favorite color:</label>
+                <input type="color" id="favcolor" name="favcolor" value="#fff">
+            </fieldset>
+            <fieldset>
+                <legend>CAREER</legend>
+                <h3>What is his main career?</h3>
+                <input type="checkbox" id="sing" name="career" value="Singer">
+                <label for="sing">Singer</label>
+                <input type="checkbox" id="tik" name="career" value="TikToker">
+                <label for="tik">TikToker</label>
+                <input type="checkbox" id="model" name="career" value="Model">
+                <label for="model">Model</label>
+                <input type="checkbox" id="act" name="career" value="Actor">
+                <label for="act">Actor</label>
+            </fieldset>
+            <fieldset>
+                <legend>DEBÚT</legend>
+                <label for="debut">
+                    <h3>When did he make his acting debut?</h3>
+                </label>
+                <select id="debut" name="debut">
+                    <option value="2008">2008</option>
+                    <option value="2017">2017</option>
+                    <option value="1995">1995</option>
+                    <option value="2014">2014</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <legend>AWARDS</legend>
+                <h3>He was nominated for Best Actor at the Academy Awards.</h3>
+                <input type="radio" id="tru" name="aaa" value="true">
+                <label for="tru">True</label>
+                <input type="radio" id="fal" name="aaa" value="false">
+                <label for="fal">False</label>
+            </fieldset>
+            <fieldset>
+                <legend>MOVIES</legend>
+                <h3>Which movie does he NOT appear in?</h3>
+                <input type="radio" id="lady" name="movie" value="Lady Bird">
+                <label for="lady">Lady Bird</label>
+                <input type="radio" id="spi" name="movie" value="Spider-man">
+                <label for="spi">Spider-man</label>
+                <input type="radio" id="boy" name="movie" value="Beatiful Boy">
+                <label for="boy">Beatiful Boy</label>
+                <input type="radio" id="dune" name="movie" value="Dune">
+                <label for="dune">Dune</label>
+            </fieldset>
+            <fieldset>
+                <legend>MUSICAL</legend>
+                <h3>In high school, Timothée Chalamet appeared in a production of what musical, based on a Neil Simon
+                    book?</h3>
+                <input type="radio" name="musical" id="Carousel" value="Carousel">
+                <label for="Carousel">Carousel</label>
+                <input type="radio" name="musical" id="tmm" value="The Music Man">
+                <label for="tmm">The Music Man</label>
+                <input type="radio" name="musical" id="sww" value="Sweet Charity">
+                <label for="sww">Sweet Charity</label>
+                <input type="radio" name="musical" id="okl" value="Oklahoma!">
+                <label for="okl">Oklahoma!</label>
+            </fieldset>
+            <fieldset>
+                <legend>POETRY</legend>
+                <h3>In December of 2018 Timothée Chalamet narrated a short film about what French poet and artist?</h3>
+                <input type="radio" name="poet" id="jec" value="Jean Cocteau">
+                <label for="jec">Jean Cocteau</label>
+                <input type="radio" name="poet" id="jck" value="Jean Claude Killy">
+                <label for="jck">Jean Claude Killy</label>
+                <input type="radio" name="poet" id="hem" value="Henri Matisse">
+                <label for="hem">Henri Matisse</label>
+                <input type="radio" name="poet" id="anb" value="André Breton">
+                <label for="anb">André Breton</label>
+            </fieldset>
+            <fieldset>
+                <legend>TV</legend>
+                <h3>What television program would you watch to see Finn Walden, played by Chalamet, commit a hit and
+                    run?</h3>
+                <input type="radio" name="tv" id="hom" value="Homeland">
+                <label for="hom">Homeland</label>
+                <input type="radio" name="tv" id="rop" value="Royal Pains">
+                <label for="rop">Royal Pains</label>
+                <input type="radio" name="tv" id="boe" value="Boardwalk Empire">
+                <label for="boe">Boardwalk Empire</label>
+                <input type="radio" name="tv" id="l&o" value="Law & Order">
+                <label for="l&o">Law & Order</label>
+            </fieldset>
+            <br><br>
+            <input id="result" type="submit" value="Result">
         </form>
     </div>
 </body>
