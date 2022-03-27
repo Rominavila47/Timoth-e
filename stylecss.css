@@ -3,6 +3,9 @@ body {
   font-family: Garamond, serif;
   background: rgb(243, 229, 229);
 }
+main{
+display: flex;
+} 
 
 /*barra de inicio*/
 .varbarra {
@@ -30,12 +33,18 @@ body {
 
 }
 
+section {
+  margin: 30px;
+}
+
 /*textos*/
 .origen {
+  box-sizing: border-box;
+  max-width: auto;
+  padding: 5px;
   text-align: justify;
   color: rgb(38, 41, 73);
-  max-width: 40%;
-  float: left;
+
 }
 
 p {
@@ -55,15 +64,42 @@ h2::first-letter {
   font-family: "sofia", sans-serif;
 }
 
+/*imagenes
+#galeria{
+  position: absolute;
+  top: 22%;
+  left: 50%;
+  width: 100%;
+}    */
+#galeria{
+  width: 50%;
+}
+.galeria {
+  display: flex;
+  flex-flow: nowrap ;
+  overflow: scroll;
+  max-width: 100%;
+  height: auto;
+  box-sizing: border-box;
+  padding: 5px;
+}
+
+
 /*tablas*/
-#pelis {
+#pelis{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  width: 80%;
+}
+
+.pelis {
   color: rgb(38, 41, 73);
   border: 3px double rgb(102, 43, 97);
   border-radius: 30px;
   padding: 10px;
   text-align: left;
   overflow-x: auto;
-  clear: left;
 }
 
 caption {
@@ -78,7 +114,6 @@ th {
 th,
 td {
   border: 1px dotted rgb(102, 43, 97);
-
 }
 
 tr:hover {
@@ -91,14 +126,12 @@ iframe {
   border: 0;
 }
 
-/*imagenes*/
-#galeria {
-  float: right;
-  max-width: 30%;
-  height: auto;
-}
 
 /*listas*/
+#novias {
+  margin-top: 60px;
+  padding: 15px;
+}
 
 .novias a {
   color: rgb(59, 15, 110);
@@ -131,7 +164,6 @@ iframe {
 
 /*footer 10min*/
 .barbotton {
-  
   display: flex;
   justify-content: space-between;
   background-color: rgb(102, 43, 97);
@@ -141,7 +173,7 @@ iframe {
 .barbotton a {
   background-color: rgb(102, 43, 97);
   color: lightpink;
-  text-decoration:none ;
+  text-decoration: none;
   margin: 10px;
 }
 
@@ -173,8 +205,8 @@ legend {
 
 /*cambiar a flex*/
 #result {
+  margin-left: 90%;
   max-width: 40%;
-  margin: 1% 75%;
   padding: 15px;
   box-sizing: border-box;
   border: 5px solid rgb(250, 191, 200);
@@ -182,7 +214,6 @@ legend {
   background-color: rgb(102, 43, 97);
   color: rgb(250, 191, 200);
   font: 20px Arial, sans-serif;
-
 }
 
 #result:hover {
